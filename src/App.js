@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Shop from './components/Shop/Shop';
@@ -13,9 +13,11 @@ import Inventory from './components/Inventory/Inventory';
 import ItemNotFound from './components/ItemNotFound/ItemNotFound';
 import ProductDetail from './components/ProductDetail/ProductDetail';
 
-function App() {
+
+function App(props) {
   return (
     <div >
+
     <Header></Header>
         <Router>
           <Switch>
